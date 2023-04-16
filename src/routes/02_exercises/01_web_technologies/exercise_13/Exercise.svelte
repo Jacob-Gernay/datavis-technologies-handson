@@ -9,4 +9,9 @@
 <div>
 	<h5>Famous soccer players:</h5>
 	<!--  -->
+	{#each videos as video}
+	<ul>
+		<li> {video.name} <a href = {video.url}> (link-to-video) </a>
+	</ul>
+	{/each}
 </div>
