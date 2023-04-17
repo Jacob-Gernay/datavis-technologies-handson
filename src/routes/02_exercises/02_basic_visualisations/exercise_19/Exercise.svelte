@@ -1,4 +1,7 @@
 <script>
+    // Import statement
+    import { scaleLinear } from 'd3-scale';
+
     // Dimensions
     const width = 800;
     const height = 100;
@@ -14,6 +17,15 @@
       { x: 7, y: 3, category: "cat3" },
       { x: 9, y: 1, category: "cat2" }
     ];
+
+    // Scale
+    const xScale = scaleLinear()
+    .domain([Math.min(values.x), Math.max(values.x)])
+    .range([0, innerWidth]);
+
+    const yScale = scaleLinear()
+    .domain([Math.min(values.y), Math.max(values.y)])
+    .range([0, innerHeight]);
   </script>
   
   <svg viewBox="0 0 {width} {height}">
