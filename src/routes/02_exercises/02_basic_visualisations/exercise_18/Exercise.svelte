@@ -34,10 +34,10 @@
     {/each}
    </g>
 
-   <g use:AxisGenerator transform="translate({margin.left},{height-25})"> 
+   <g use:AxisGenerator transform="translate({margin.left},{height-margin.bottom*5})"> 
   </g>
   <g class="tick" opacity="1" transform="translate({margin.left+ 400},{height - 20})">
-    <text fill="currentColor" y="9" dy="0.71em">X-axis</text>
+    <text fill="currentColor" y={10} dy="0.71em">X-axis</text>
   </g>
 </svg>
 
